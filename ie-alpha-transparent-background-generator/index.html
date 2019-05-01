@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IE Alpha Transparent Background Generator</title>
+    <link rel="shortcut icon" href="./icon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style id="styles"></style>
+  </head>
+
+  <body>
+    <!-- Main Body -->
+    <main class="container">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="h2 text-center">
+            IE Alpha Transparent Background Generator
+          </h1>
+          <h4 class="text-center">
+            RGBA generator for IE 6-9 and all other browsers.
+          </h4>
+          <!-- Input Form -->
+          <div class="row margin-top">
+            <div class="col-sm-12">
+              <form id="input-form" novalidate="">
+                <div class="form-group row">
+                  <label for="colour">Hex Colour (Required)</label>
+                  <div>
+                    <input type="text" id="colour" class="form-control form-control-lg" placeholder="FFFFFF" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="opacity">Opacity (Required)</label>
+                  <div>
+                    <input type="number" id="opacity" min="0" max="1" step="0.1" class="form-control form-control-lg" placeholder="0.5" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="element-name">Element Name</label>
+                  <div>
+                    <input type="text" id="element-name" class="form-control form-control-lg" placeholder="#ID" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      Generate CSS
+                    </button>
+                  </div>
+                </div>
+                <div id="error" class="form-group row">
+                  <div class="alert alert-danger">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>
+                    <div id="error-message"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="output" class="col-sm-12 output text-center">
+              <div class="form-group row">
+                <label>Sample output</label>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Input Form -->
+          <div class="clearfix margin-top"></div>
+          <!-- Result Form -->
+          <div class="row">
+            <div class="col-sm-12">
+              <form id="result-form">
+                <div class="form-group row">
+                  <label for="result">Result</label>
+                  <div>
+                    <textarea id="result" class="form-control" rows="11"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div>
+                    <button id="" type="submit" class="btn btn-primary btn-lg">
+                      Copy to clipboard
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Result Form -->
+        </div>
+      </div>
+    </main>
+    <!-- End Main Body -->
+    <script src="script.js"></script>
+  </body>
+</html>

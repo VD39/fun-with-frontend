@@ -1,0 +1,58 @@
+* {
+  border-radius: 0 !important;
+}
+
+body {
+  padding-top: 25px;
+}
+
+.form-control-lg {
+  padding: 2.75rem 1.5rem;
+  font-size: 2.25rem;
+}
+
+.btn {
+  width: 100%;
+}
+
+.output-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: 50px;
+}
+
+.margin-top {
+  margin-top: 25px;
+}
+
+.output {
+  display: block;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
+  border: 1px dotted #000000;
+}
+
+.alert {
+  position: relative;
+}
+
+#error {
+  display: none;
+}
+
+#error-message {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.glyphicon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.jumbotron h1 {
+  font-size: 30px;
+}
