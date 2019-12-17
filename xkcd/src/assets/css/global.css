@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+
+html {
+  font-size: 62.5%;
+  line-height: 1;
+}
+
+body {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  display: block;
+}
